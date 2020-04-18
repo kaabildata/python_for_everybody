@@ -30,7 +30,7 @@ if row is not None:
     print("Restarting existing crawl.  Remove spider.sqlite to start a fresh crawl.")
 else :
     starturl = input('Enter web url or enter: ')
-    if ( len(starturl) < 1 ) : starturl = 'https://en.wikipedia.org/wiki/Wikipedia'
+    if ( len(starturl) < 1 ) : starturl = 'https://stackoverflow.com'
     if ( starturl.endswith('/') ) : starturl = starturl[:-1]
     web = starturl
     if ( starturl.endswith('.htm') or starturl.endswith('.html') ) :
